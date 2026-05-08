@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Resume Builder</h1>
+
+    <form id="resumeForm">
+
+        <input type="text" placeholder="Full Name">
+
+        <input type="email" placeholder="Email">
+
+        <input type="text" placeholder="Phone Number">
+
+        <textarea placeholder="Skills"></textarea>
+
+        <textarea placeholder="Projects"></textarea>
+
+        <textarea placeholder="Education"></textarea>
+
+        <textarea placeholder="Experience"></textarea>
+
+        <button type="button" onclick="generateResume()">
+            Generate Resume
+        </button>
+
+    </form>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
